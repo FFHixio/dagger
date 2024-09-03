@@ -145,7 +145,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gradle-
     - name: 'Download local snapshot for tests'
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: local-snapshot
         path: ~/.m2/repository/com/google/dagger
@@ -172,7 +172,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
       - name: 'Download local snapshot for tests'
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: local-snapshot
           path: ~/.m2/repository/com/google/dagger
@@ -204,7 +204,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
       - name: 'Download local snapshot for tests'
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: local-snapshot
           path: ~/.m2/repository/com/google/dagger
@@ -305,7 +305,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
       - name: 'Download local snapshot for tests'
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: local-snapshot
           path: ~/.m2/repository/com/google/dagger
